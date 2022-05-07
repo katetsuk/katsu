@@ -1,0 +1,221 @@
+:root{
+    --darkPurple: #5C267A;
+    --lightPurple: #EBE1F0;
+    --green: #00A78F;
+}
+
+@font-face{
+    font-family: "RobotoBold";
+    src: url("/fonts/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+
+html{
+    min-height: 100%;
+    max-width: 100vw;
+}
+
+body{
+    max-width: 100%;
+    min-height: 100%;
+    background-color: var(--lightPurple);
+    font-family: "RobotoBold";
+    overflow-x:hidden;
+}
+
+h1{
+    font-size: 6vw;
+    color: white;
+}
+
+.main-page-container{
+    min-height: 100%;
+    max-width: 100%;
+}
+
+.upper-line-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.square{
+    width: calc(100vw / 100 * 9.3);
+    height: calc(100vw / 100 * 9.3);
+}
+
+.green{
+    background-color: var(--green);
+}
+
+.purple{
+    background-color: var(--darkPurple);
+}
+
+.first-line{
+    width: 60%;
+    height: calc(100vw / 100 * 9.3);
+    display: flex;
+    justify-content: space-between;
+}
+
+.upper-line-container .square.green{
+    position: relative;
+}
+
+.upper-line-container .para{
+    width: 29.8%;
+    height: 100%;
+    clip-path: polygon(36.5% 0%, 100% 0%, 63.5% 100%, 0% 100%);
+}
+
+.upper-line-container .rect{
+    width: 59.2%;
+    height: 100%;
+    position: relative;
+}
+
+.upper-middle-line-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 16.2%;
+    height: calc(100vw / 100 * 35.35);
+    width: 45.2%;
+}
+
+.upper-middle-line-container .para{
+    width: 79.5%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 31.25% 0%, 100% 100%, 68.75% 100%);
+}
+
+.upper-middle-line-container .square.purple{
+    position: relative;
+}
+
+.about-line-container{
+    width: 67.6%;
+    height: calc(100vw / 100 * 81.98);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    left: 8.68%;
+    top: calc(100vw / 100 * 15.25);
+}
+
+.about-line-container h1{
+    position: absolute;
+    transform: rotate(55.2deg);
+    left: 21%;
+    top: 32.5%;
+    color: transparent;
+}
+
+.about-line-container .para{
+    height: 75.48%;
+    width: 80.57%;
+    clip-path: polygon(79.28% 100%, 100% 100%, 100% 100%, 79.28% 100%);
+}
+
+.contact-line-container{
+    width: 34.57%;
+    height: calc(100vw / 100 * 84.4);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    top: calc(100vw / 100 * 12.85);
+}
+
+.contact-line-container .para.purple{
+    width: 98.15%;
+    height: 57.4%;
+    clip-path: polygon(-100% -100%, 0% 0%, -33.26% 0%, -100% -66.9%);
+}
+
+.contact-line-container .para.green{
+    width: 98.15%;
+    height: 42.6%;
+    background-color: transparent;
+    clip-path: polygon(66.74% 0%, 100% 0%, 26.3% 100%, 0% 100%, 0% 90.8%);
+}
+
+.contact-line-container h1{
+    position: absolute;
+    right: -12%;
+    bottom: 14%;
+    color: transparent;
+    transform: rotate(304.5deg);
+}
+
+.projects-line-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    width: 35.42%;
+    height: calc(100vw / 100 * 46.875);
+    right: 0;
+    top: calc(100vw / 100 * 23.98);
+}
+
+.projects-line-container h1{
+    position: absolute;
+    transform: rotate(304.5deg);
+    top: -60%;
+    right: -60%;
+}
+
+.projects-line-container .square.green{
+    position: relative;
+    background-color: transparent;
+}
+
+.projects-line-container .lines-container{
+    height: 100%;
+    width: 73.725%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.projects-line-container .lines-container .para.green{
+    height: 80.14%;
+    width: 100%;
+    clip-path: polygon(100% 0%, 100% 0%, 100% 43.17%, 100% 43.17%);
+}
+
+.projects-line-container .lines-container .para.purple{
+    height: 19.86%;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    clip-path: polygon(0% 0%, 43.24% 0%, 68.12% 100%, 27.54% 100%);
+}
+
+.bottom-square{
+    position: absolute;
+    background-color: transparent;
+    top: calc(100vw / 100 * 87.94);
+    right: 0;
+}
+
+#text-about{
+    cursor: pointer;
+}
+
+#text-contacts{
+    cursor: pointer;
+}
+
+#text-projects{
+    cursor: pointer;
+}
